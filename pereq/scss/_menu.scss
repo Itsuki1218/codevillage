@@ -1,0 +1,57 @@
+.menu-space {
+    padding: 296px 0 70px;
+    @include sp {
+        padding: 60px 0 63px;
+    }
+}
+
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        flex-direction: column;
+    }
+}
+
+.menu-item {
+    width: 25%;
+    @include sp {
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .menu-img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.menu-content {
+    padding: 10px;
+    font-family: $fstyle;
+    &-title {
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        margin-top: 27px;
+        text-align: center;
+        @include sp {
+            text-align: left;
+        }
+    }
+    &-intro {
+        font-size: 1.6rem;
+        letter-spacing: 0.16rem;
+        margin-top: 34px;
+    }
+    &-price {
+         font-size: 1.6rem;
+         letter-spacing: 0.16rem;
+         text-align: right;
+         margin-top: 34px;
+    }
+}

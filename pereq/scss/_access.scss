@@ -1,0 +1,64 @@
+.access {
+    background-color: #A193861F;
+    height: 757px;
+    @include tab {
+        height: 710px;
+    }
+    &-flter {
+        padding: 251px 0 69px;
+        @include tab {
+            padding: 58px 0 59px;
+        }
+    }
+}
+
+.access-wrap {
+    height: 396px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+    background-color: #D0C5BA;
+    @include tab {
+        display: block;
+        height: 513px;
+    }
+    &-map {
+        width: 60.4%;
+        @include tab {
+            width: 100%;
+            height: 45%;
+        }
+        &-text {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-info {
+        width: 39.6%;
+        height: 396px;
+        padding: 5% 11% 5% 7%; 
+        @include tab {
+            height: 55%;
+            width: 100%;
+            padding: 15px 0 0 5%;
+        }
+        h3 {
+            font-family: $fstyle;
+            font-size: 2.4rem;
+            margin-bottom: 30px;
+            color: #00000038;
+            letter-spacing: 2.4px;
+        }
+        p {
+            font-family: $fstyle;
+            font-size: 1.6rem;
+            margin-bottom: 23px;
+            color: #fff;
+            letter-spacing: 1.6px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}

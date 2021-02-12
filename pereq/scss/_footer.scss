@@ -1,0 +1,74 @@
+footer {
+    height: 342px;
+    @include tab {
+        height: 260px;
+    }
+}
+
+.footer-wrap {
+    height: 164px;
+    border-bottom: 1px solid #7070704D;
+    @include tab {
+        height: 63px;
+    }
+}
+
+.footer-bottom {
+    height: 37px;
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse;
+    @include tab {
+        height: 193px;
+        flex-direction: column;
+    }
+    &-text {
+        letter-spacing: 3.2px;
+        font-size: 3.2rem;
+        font-family: $fstyle;
+        color:#7070704D;
+        @include tab {
+            font-size: 1.8rem;
+            letter-spacing: 1.8px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 19px;
+        }
+        .icon {
+            font-size: 1.9rem;
+            color: black;
+            &:first-child {
+                margin-left: 26px;
+                @include tab {
+                    position: absolute;
+                    right: 5%;
+                    margin-left: 0;
+                }
+            }
+            &:last-child {
+                margin-left: 9px;
+                @include tab {
+                    position: absolute;
+                    right: 0%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    &-btn {
+        width: 17%;
+        font-size: 1.8rem;
+        font-family: $fstyle;
+        border: solid 1px #707070;
+        color: #707070;
+        letter-spacing: 1.8px;
+        padding: 10px 3.8% 9px 3.8%;
+        text-align: center;
+        @include tab {
+            width: 49%;
+        }
+    }
+}
+

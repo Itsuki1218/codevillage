@@ -1,0 +1,89 @@
+.concept {
+    height: 960px;
+    @include sp {
+        height: 711px;
+    }
+    &-sub {
+        height: 41%;
+        background-color: #A193861F;
+        @include sp {
+            height: 24%;
+        }
+    }
+    &-main {
+        height: 59%;
+        background-color: #A1938689;
+        @include sp {
+            height: 75%;
+        }
+    }
+}
+
+.concept-wrap {
+    transform: translate(0, -28%);
+    @include sp {
+        transform: translate(0, -18%);
+        margin: 0 auto;
+    }
+    
+}
+
+
+.c-img {
+    display: flex;
+    justify-content: space-between;
+    &-one {
+        width: 62%;
+        @include sp {
+            width: 49%;
+        }
+    }
+    &-two {
+        width: 36%;
+        @include sp {
+            width: 49%;
+        }
+    }
+}
+
+.c-message {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 5%;
+    @include sp {
+        display: inline-block;
+        width: 100%;
+       padding-top: 8%;
+    }
+    &-one {
+        width: 45%;
+        font-size: 4rem;
+        font-family: ヒラギノ明朝 Pro;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        letter-spacing: 1.5rem;
+        @include sp {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 1.8rem;
+            letter-spacing: 0.72rem;
+        }
+    }
+    &-two {
+        width: 43%;
+        font-size: 1.4rem;
+        font-family: ヒラギノ角ゴ Pro;
+        letter-spacing: 0.16rem;
+        @include sp {
+            width: 100%;
+            font-size: 1.6rem;
+            letter-spacing: 0.16rem;
+            margin-top: 18px;
+        }
+    }
+}

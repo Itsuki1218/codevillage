@@ -1,0 +1,71 @@
+////////////////////
+////    変数    ////
+///////////////////
+$fstyle: Roboto Mono for Powerline;
+
+
+
+
+
+
+////////////////////
+////   mixin   ////
+///////////////////
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+////////////////////
+////    共通    ////
+///////////////////
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 3.8px;
+}
+
+.inner {
+    width: 84%;
+    margin: 0 auto;
+    @include tab {
+        width: 90%;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #707070;
+    letter-spacing: 5.4px;
+    font-family: $fstyle;
+    margin-bottom: 11px;
+    @include tab {
+        margin-bottom: 50px;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 5em;
+        margin-left: 1.5rem;
+    }
+}
