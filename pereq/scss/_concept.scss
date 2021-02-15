@@ -36,6 +36,8 @@
         width: 62%;
         @include sp {
             width: 49%;
+            object-fit: cover;
+            object-position: 80%;
         }
     }
     &-two {
@@ -76,7 +78,7 @@
     }
     &-two {
         width: 43%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-family: ヒラギノ角ゴ Pro;
         letter-spacing: 0.16rem;
         @include sp {

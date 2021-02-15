@@ -197,7 +197,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #707070;
   letter-spacing: 1.8px;
 }
@@ -286,6 +286,11 @@ nav ul li:hover {
     padding: 0;
   }
 }
+@media screen and (max-width: 959px) and (max-width: 600px) {
+  .f-v-message {
+    background-position: -100px,0;
+  }
+}
 
 .catch-one {
   padding-left: 11%;
@@ -354,6 +359,8 @@ nav ul li:hover {
 @media screen and (max-width: 600px) {
   .c-img-one {
     width: 49%;
+    object-fit: cover;
+    object-position: 80%;
   }
 }
 .c-img-two {
@@ -400,7 +407,7 @@ nav ul li:hover {
 }
 .c-message-two {
   width: 43%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: ヒラギノ角ゴ Pro;
   letter-spacing: 0.16rem;
 }
@@ -537,16 +544,16 @@ nav ul li:hover {
 .access-wrap-info h3 {
   font-family: Roboto Mono for Powerline;
   font-size: 2.4rem;
-  margin-bottom: 30px;
+  margin-bottom: 2.3rem;
   color: #00000038;
   letter-spacing: 2.4px;
 }
 .access-wrap-info p {
   font-family: Roboto Mono for Powerline;
   font-size: 1.6rem;
-  margin-bottom: 23px;
+  margin-bottom: 1.5rem;
   color: #fff;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
 }
 .access-wrap-info p:last-child {
   margin-bottom: 0;
@@ -610,7 +617,7 @@ footer {
 @media screen and (max-width: 959px) {
   .footer-bottom-text .icon:first-child {
     position: absolute;
-    right: 5%;
+    right: 30px;
     margin-left: 0;
   }
 }
